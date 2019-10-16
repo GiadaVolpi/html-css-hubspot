@@ -121,6 +121,7 @@ body {
     background-size: cover;
     background-position: bottom;
     border-bottom: 3px solid #33475c;
+    box-shadow:-20px 10px 50px -20px #e0dede inset;
 }
 
 .first_text_container {
@@ -161,4 +162,39 @@ body {
 
 .first_text small {
     font-size: 10px;
+}
+
+.second_container {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.rubik {
+    width: 1080px;
+    height: 315px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#cubo {
+    width: 260px;
+    margin: 0 410px 0 410px;
+}
+
+.rubik h2 {
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    color: #33475b;
+    padding: 0 0 20px 0;
+}
+
+.rubik p {
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #605e5e;
+    margin: 0 140px;
+    text-align: center;
 }
