@@ -475,27 +475,86 @@ h2>spam {
 
 .fifth_container {
     padding-top: 100px;
-    background-color: lightyellow;
 }
 
 .clienti_container {
     width: 1080px;
+    height: 190px;
     margin: auto;
-    background-color: lightblue;
 }
 
-.clienti_sub-cont {
+.clienti_left {
     width: 330px;
     padding: 20px 40px 20px 40px;
+    float: left;
 }
 
-.clienti_sub-cont>h3 {
+.clienti_left>h3 {
     font-weight: 800;
     font-size: 35px;
 }
 
-.clienti_sub-cont>p {
+.clienti_left>p {
     font-size: 16px;
     line-height: 30px;
     padding-top: 10px;
+}
+
+.clienti_right {
+    float: right;
+    padding: 10px 0;
+}
+
+.logo_cliente {
+    float: left;
+    width: 167.5px;
+}
+
+img.cliente {
+    width: 110px;
+    margin: 20px 20px;
+}
+
+.clienti_container:after {
+    content: "";
+    display: table;
+    clear:
+}
+
+.sixth_container {
+    padding: 100px 0;
+}
+
+.sixth_sub-cont {
+    width: 1080px;
+    margin: auto;
+}
+
+.sixth_content_left {
+    width: 500px;
+    float: left;
+}
+
+.sixth_content_left h2 {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.sixth_content_left p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.sixth_content_left small {
+    padding-top: 20px;
+    font-size: 11px;
+}
+
+.sixth_content_right {
+    float: right;
+}
+
+.sixth_content_right img {
+    width: 350px;
 }
