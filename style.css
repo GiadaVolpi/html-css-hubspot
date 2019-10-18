@@ -68,6 +68,7 @@ body {
     background-color: white;
     border: 1px solid #fc7455;
     color: #fc7455;
+    border-radius: 3px;
 }
 
 .white_button:hover {
@@ -557,4 +558,70 @@ img.cliente {
 
 .sixth_content_right img {
     width: 350px;
+}
+
+.sixth_sub-cont:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    height: 550px;
+    padding-top: 100px;
+    background-color: #33475b;
+}
+
+.footer_container {
+    width: 1080px;
+    margin: auto;
+}
+
+.footer_list {
+    float: left;
+    width: 25%;
+}
+
+.footer_list ul li {
+    list-style-type: none;
+    color: #dbdbdb;
+}
+
+.footer_list li {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+li strong {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer_button {
+    padding: 9px 13px;
+    margin: 20px 0;
+    color: #33475b;
+    font-size: 11px;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.footer_list .fab,.fas{
+    font-size: 15px;
+    color: #dbdbdb;
+    margin-right: 25px;
+}
+
+.footer_list li:hover, .footer_list .fab:hover, .footer_list .fas:hover {
+    color: #53e2ef;
+}
+
+#free_tools {
+    color: white;
+}
+
+#foot-fas-none:hover {
+    color: white;
 }
