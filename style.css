@@ -70,6 +70,10 @@ body {
     color: #fc7455;
 }
 
+.white_button:hover {
+    background-color: #f9efed;
+}
+
 .transparent_button {
     background-color: transparent;
     border: none;
@@ -156,6 +160,10 @@ body {
     font-weight: 500;
     padding: 25px 40px;
     margin-bottom: 20px;
+}
+
+.big_red_button:hover,.red_button:hover,.learn_button:hover {
+    background-color: #fc886f;
 }
 
 .first_text small {
@@ -371,13 +379,11 @@ span>.vert-ceck {
 }
 
 .fourth_container {
-    height: 880px;
     padding: 130px 0;
     background-image: linear-gradient(to right, #00aab7 , #00c4aa);
 }
 
 .fourth_sub-container {
-    height: 620px;
     width: 1080px;
     margin: auto;
 }
@@ -403,29 +409,56 @@ span>.vert-ceck {
 
 .table_block {
     width: 269px;
-    height: 180px;
     float: left;
 }
 
-.table_block .fl {
+.table_block.fl {
     border-bottom: 1px solid white;
     border-right: 1px solid white;
+    padding: 30px;
 }
 
-.table_block .sl {
+.table_block.sl {
     border-right: 1px solid white;
+    padding: 30px;
+}
+
+.fl.none,.sl.none {
+    border-right: 0;
+}
+
+.loghetto {
+    height: 33px;
+    margin: 5px auto 15px auto;
 }
 
 .fl>h2 {
     color: white;
+    font-size: 40px;
 }
 
 .sl>h2 {
     color: white;
+    font-size: 40px;
 }
 
-.fl>small {
-    font-size: 12px;
+h2>spam {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.fl>p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.sl>p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
 }
 
 .first_line_table:after {
@@ -438,4 +471,31 @@ span>.vert-ceck {
     content: "";
     display: table;
     clear: both;
+}
+
+.fifth_container {
+    padding-top: 100px;
+    background-color: lightyellow;
+}
+
+.clienti_container {
+    width: 1080px;
+    margin: auto;
+    background-color: lightblue;
+}
+
+.clienti_sub-cont {
+    width: 330px;
+    padding: 20px 40px 20px 40px;
+}
+
+.clienti_sub-cont>h3 {
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.clienti_sub-cont>p {
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 10px;
 }
