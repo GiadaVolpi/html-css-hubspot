@@ -21,14 +21,31 @@ body {
 
 .language, .contattaci {
     line-height: 70px;
-    color: #516374;
+    color: #33475b;
     font-size: 14px;
     padding: 3px 0;
 }
 
 .language {
-    border-right: 2px solid #cad5e1;
+    border-right: 2px solid #cccccc;
     cursor: pointer;
+}
+
+.language:hover .drop_cont {
+    display: block;
+}
+
+.drop_cont {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 10px 35px 10px 20px;
+    margin-right: 0;
+    z-index: 1;
 }
 
 .contattaci {
@@ -36,16 +53,14 @@ body {
     cursor: pointer;
 }
 
-
-.fa-globe-europe {
-    padding-right: 10px;
+i.fas.fa-globe-europe {
     font-size: 14px;
+    color: #33475b;
 }
 
-.fa-sort-down {
-    padding: 0 15px;
-    font-size: 18px;
-    color: #7c97b5;
+.fas.fa-sort-down.english {
+    color: #33475b;
+    padding-left: 10px;
 }
 
 .transparent_button, .white_button, .red_button {
@@ -80,9 +95,10 @@ body {
     border: none;
 }
 
-.fa-search {
+button .fa-search {
     color: #02a5bd;
     font-size: 15px;
+    margin-right: 0;
 }
 
 .container_header_scroll {
@@ -99,16 +115,26 @@ body {
     padding: 25px 0;
 }
 
-.menù ul li{
+.menù>ul>li{
     float: right;
     list-style-type: none;
     font-size: 14px;
     font-weight: 500;
     color: #33475b;
     padding-top: 30px;
-    padding-left: 30px;
+    padding-left: 10px;
     position: relative;
     cursor: pointer;
+}
+
+#pricing {
+    padding-right: 20px;
+}
+
+.fa-sort-down.inline-menù {
+    padding: 0 5px;
+    font-size: 18px;
+    color: #7c97b5;
 }
 
 .container_header_scroll:after {
@@ -117,9 +143,26 @@ body {
     clear: both;
 }
 
+.fixed {
+    position: relative;
+}
+
+.chat_fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #33475b;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+}
+
+#chat {
+    width: 30px;
+}
+
 .first_container {
     height: 680px;
-    background-color: lightyellow;
     background-image: url("comunication_image.jpg");
     background-size: cover;
     background-position: bottom;
@@ -297,12 +340,15 @@ h4 {
     font-size: 12px;
 }
 
-span>.fa-check-circle {
-    margin-right: 8px;
-    margin-left: 18px;
+.horizontal_checked_list span {
+    margin-right: 10px;
 }
 
-.fa-check-circle {
+.fas.fa-check-circle {
+    margin-right: 8px;
+}
+
+.fas.fa-check-circle {
     color: #fc7455;
     font-size: 15px;
 }
@@ -411,6 +457,7 @@ span>.vert-ceck {
 .table_block {
     width: 269px;
     float: left;
+    text-align: center;
 }
 
 .table_block.fl {
@@ -626,7 +673,7 @@ li strong {
     text-align: center;
 }
 
-.footer_language ul li {
+.footer_language li {
     display: inline-block;
     list-style-type: none;
     font-size: 14px;
@@ -650,7 +697,7 @@ li strong {
     color: #dbdbdb;
 }
 
-.legal_notes ul li {
+.legal_notes li {
     float: right;
     display: inline-block;
     list-style-type: none;
