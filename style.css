@@ -558,9 +558,11 @@ h2>spam {
     /*position: relative;*/
 }
 
-img.cliente {
+.logo_cliente img.cliente {
     width: 110px;
     margin: 20px 20px;
+    object-fit: contain;
+    height: 50px;
     /*position: absolute;
     top: 50%;
     transform: translateY(-50%);*/
@@ -682,7 +684,7 @@ li strong {
     font-size: 14px;
     font-weight: 500;
     color: #dbdbdb;
-    padding: 50px 20px 40px 0;
+    padding: 50px 30px 40px 0;
 }
 
 .footer_container hr {
